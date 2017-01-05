@@ -1,0 +1,65 @@
+{
+    "welcome_content": 
+        {
+            "card_title": "Bonjour 👋 ",
+            "card_subtitle": "🥐 🇫🇷 Welcome to FranceSay 🥐 🇫🇷 ",
+            "welcome_message": "💁 I'm here to help you get through tricky situations when people around you don't speak any English and you just have to speak in Français!"
+        },
+    "situation_content":
+    {
+        "ask_user_situation": "Where are you right now? 📍",
+        "default_welcome": "Très bien! 👍 Here are 5 sentences that might help you in this situation:",
+        "situation_100":{
+            "title":"Aeroport, Gare",
+            "subtitle":"At the airport bus stop",
+            "image":"http://www.oaklandairport.com/wp-content/themes/airport/includes/timthumb.php?src=http://www.oaklandairport.com/wp-content/uploads/2016/05/box6.jpg&h=256&w=570&zc=1&q=80",
+            "button_one":"listen",
+            "button_two":"read",
+            "text_sentences":{
+                "sentence1":"Hello, Ticket count please | Salut, Ticket,combien desolz",
+                "sentence2":"Hello, Ticket count please | Salut, Ticket,combien desolz",
+                "sentence3":"Hello, Ticket count please | Salut, Ticket,combien desolz",
+                "sentence4":"Hello, Ticket count please | Salut, Ticket,combien desolz",
+                "sentence5":"Hello, Ticket count please | Salut, Ticket,combien desolz"
+            },
+            "audio_sentenes":{
+                 "sentence1":""
+            }
+        },
+        "situation_101":{
+            "title":"Le Metro",
+            "subtitle":"At the metro station",
+            "image":"https://www.railengineer.uk/wp-content/uploads/Paris-Metro-01.jpg",
+            "button_one":"listen",
+            "button_two":"read",
+             "text_sentences":{
+                "sentence1":"Hello, Ticket count please | Salut, Ticket,combien desolz",
+                "sentence2":"Hello, Ticket count please | Salut, Ticket,combien desolz",
+                "sentence3":"Hello, Ticket count please | Salut, Ticket,combien desolz",
+                "sentence4":"Hello, Ticket count please | Salut, Ticket,combien desolz",
+                "sentence5":"Hello, Ticket count please | Salut, Ticket,combien desolz"
+            },
+            "audio_sentenes":{
+                 "sentence1":""
+            }
+        },
+        "situation_102":{
+            "title":"Le Hotel",
+            "subtitle":"At the hotel reception",
+            "image":"http://doubletree3.hilton.com/resources/media/dt/HUYLNDI/en_US/img/shared/full_page_image_gallery/main/HL_newfrontdesk001_2_677x380_FitToBoxSmallDimension_Center.jpg",
+            "button_one":"listen",
+            "button_two":"read",
+             "text_sentences":{
+                "sentence1":"Hello, Ticket count please | Salut, Ticket,combien desolz",
+                "sentence2":"Hello, Ticket count please | Salut, Ticket,combien desolz",
+                "sentence3":"Hello, Ticket count please | Salut, Ticket,combien desolz",
+                "sentence4":"Hello, Ticket count please | Salut, Ticket,combien desolz",
+                "sentence5":"Hello, Ticket count please | Salut, Ticket,combien desolz"
+            },
+            "audio_sentenes":{
+                 "sentence1":""
+            }
+        }
+    }
+    
+}
