@@ -11,33 +11,33 @@
         "default_welcome": "Très bien! 👍 Here are 5 sentences that might help you in this situation:",
         "situation_100":{
             "title":"Aeroport, Gare",
-            "subtitle":"At the airport bus stop",
+            "subtitle":"Le Bus Direct à l'Aéroport | Bus Shuttle at the Airport",
             "image":"http://www.oaklandairport.com/wp-content/themes/airport/includes/timthumb.php?src=http://www.oaklandairport.com/wp-content/uploads/2016/05/box6.jpg&h=256&w=570&zc=1&q=80",
             "button_one":"listen",
             "button_two":"read",
             "text_sentences":{
-                "sentence1":"Hello, Ticket count please | Salut, Ticket,combien desolz",
-                "sentence2":"Hello, Ticket count please | Salut, Ticket,combien desolz",
-                "sentence3":"Hello, Ticket count please | Salut, Ticket,combien desolz",
-                "sentence4":"Hello, Ticket count please | Salut, Ticket,combien desolz",
-                "sentence5":"Hello, Ticket count please | Salut, Ticket,combien desolz"
+                "sentence1":"Hello. One ticket please. | Bonjour. Un ticket s'il vous plaît.",
+                "sentence2":"What are the stops on this route? | Quels sont les arrêts de cette ligne ?",
+                "sentence3":"Does the bus go upto Champs Élysées? | Est-ce que le bus va jusqu'aux Champs Élysées ?",
+                "sentence4":"When is the next bus? | Le prochain bus part à quelle heure ? ",
+                "sentence5":"When is the last bus? | Le dernier bus part à quelle heure ?  "
             },
-            "audio_sentenes":{
-                 "sentence1":""
+            "audio_sentences":{
+                 "sentence1":"https://s3.ap-south-1.amazonaws.com/fdvids/unticket.mp3"
             }
         },
         "situation_101":{
             "title":"Le Metro",
-            "subtitle":"At the metro station",
+            "subtitle":"A la station de métro  |   At the metro station",
             "image":"https://www.railengineer.uk/wp-content/uploads/Paris-Metro-01.jpg",
             "button_one":"listen",
             "button_two":"read",
              "text_sentences":{
-                "sentence1":"Hello, Ticket count please | Salut, Ticket,combien desolz",
-                "sentence2":"Hello, Ticket count please | Salut, Ticket,combien desolz",
-                "sentence3":"Hello, Ticket count please | Salut, Ticket,combien desolz",
-                "sentence4":"Hello, Ticket count please | Salut, Ticket,combien desolz",
-                "sentence5":"Hello, Ticket count please | Salut, Ticket,combien desolz"
+                "sentence1":"Hello. A Navigo pass for a week please. | Bonjour. Un pass Navigo pour une semaine s'il vous plaît. ",
+                "sentence2":"Hello. One Paris Visite pass please. | Bonjour. Un forfait Paris Visite s'il vous plaît.",
+                "sentence3":"Hello. One booklet of tickets please. | Bonjour. Un carnet de tickets s'il vous plaît.",
+                "sentence4":"There is a problem with my pass. It's not working. | Il y a un problème avec mon pass. Ça ne marche pas.",
+                "sentence5":"I would like to recharge my Pass Navigo. | Je voudrais recharger mon pass Navigo s'il vous plaît. "
             },
             "audio_sentenes":{
                  "sentence1":""
@@ -45,16 +45,16 @@
         },
         "situation_102":{
             "title":"Le Hotel",
-            "subtitle":"At the hotel reception",
+            "subtitle":"A la réception de l'hôtel |  At the hotel reception",
             "image":"http://doubletree3.hilton.com/resources/media/dt/HUYLNDI/en_US/img/shared/full_page_image_gallery/main/HL_newfrontdesk001_2_677x380_FitToBoxSmallDimension_Center.jpg",
             "button_one":"listen",
             "button_two":"read",
              "text_sentences":{
-                "sentence1":"Hello, Ticket count please | Salut, Ticket,combien desolz",
-                "sentence2":"Hello, Ticket count please | Salut, Ticket,combien desolz",
-                "sentence3":"Hello, Ticket count please | Salut, Ticket,combien desolz",
-                "sentence4":"Hello, Ticket count please | Salut, Ticket,combien desolz",
-                "sentence5":"Hello, Ticket count please | Salut, Ticket,combien desolz"
+                "sentence1":"Hello. One double room please. | Bonjour. Une chambre double s'il vous plaît. ",
+                "sentence2":"Hello. I have a reservation in the name of.... | Bonjour. J'ai une réservation au nom de....",
+                "sentence3":"Breakfast is served at what time? | Le petit déjeuner est servi à quelle heure  ? ",
+                "sentence4":"Do you have wifi? Is it free? What is the password? | Vous avez du WiFi ?    C'est gratuit ?  Quel est le mot de passe ? ",
+                "sentence5":"I would like to check-out. The bill please. | Je pars maintenant. La note s'il vous plaît."
             },
             "audio_sentenes":{
                  "sentence1":""

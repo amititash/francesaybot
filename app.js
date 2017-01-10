@@ -24,8 +24,8 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
   
 // Create chat bot
 var connector = new builder.ChatConnector({
-    appId: process.env.MICROSOFT_APP_ID,
-    appPassword: process.env.MICROSOFT_APP_PASSWORD
+    appId: '7fcce41e-2924-4a77-83b1-37e1a76b6d4b',//process.env.MICROSOFT_APP_ID,
+    appPassword: 'oTpr9RTjTqiJdJVmd23f6yJ'//process.env.MICROSOFT_APP_PASSWORD
 });
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
@@ -173,7 +173,7 @@ bot.dialog('/chosenSituation',[
        console.log("called this dialog with", session.privateConversationData.choice);
        session.send(CONTENT.situation_content.default_welcome);
        }
-
+       
        var chosenSituationHandle = "situation_"+session.privateConversationData.choice;
        var textArr = CONTENT.situation_content;
 
@@ -183,8 +183,11 @@ bot.dialog('/chosenSituation',[
 
        //session.dialogData.index = 1;
 
-       if(session.dialogData.index < 5 )
+       if(session.dialogData.index > 5 )
        {
+           session.endDialog("Thats it. No more bananas!");
+       }
+     
            
            var sentenceHandle = "sentence"+session.dialogData.index;
            console.log(sentenceHandle);
@@ -193,24 +196,52 @@ bot.dialog('/chosenSituation',[
            var engSentence = completeSentenceArr[0];
            var frSentence = completeSentenceArr[1];
 
+           var audioUrl =  textArr[chosenSituationHandle]["audio_sentences"][sentenceHandle];
+
+
+
            session.send("In English - "+engSentence);
            session.send("In French - "+frSentence);
 
+           var msg = new builder.Message(session).sourceEvent(
+               {facebook: {
+                    attachment: {
+                        type: "audio",
+                        payload: {
+                             url: audioUrl
+                        }
+                    }
+                }
+            });
+        session.send(msg);
+        
            session.dialogData.index++;
 
-           session.replaceDialog('/chosenSituation', session.dialogData);
-           
-       }
-       else
+           if (session.messageSent)
+           {
+               builder.Prompts.choice(session, "Next sentence ?", ["yes","no","bye"]);
+           }
+    },
+
+    function(session, results)
+    {
+        console.log(session.dialogData.index);
+        console.log(results.response);
+
+        if(results.response.entity === "yes")
+        {
+            session.replaceDialog('/chosenSituation', session.dialogData);
+        }
+        else if(results.response.entity === "no")
+        {
+            session.beginDialog('/situation');
+        }
+        else
        {
+           session.send("Ok Bye!");
            session.endDialog();
        }
-
-       
-        // builder.Prompts.text(session, "Prompts.text()\n\nEnter some text and I'll say it back.");
-
-    }
-  
+    }  
 ]);
 
 
