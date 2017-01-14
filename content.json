@@ -1,65 +1,123 @@
 {
-    "welcome_content": 
-        {
-            "card_title": "Bonjour 👋 ",
-            "card_subtitle": "🥐 🇫🇷 Welcome to FranceSay 🥐 🇫🇷 ",
-            "welcome_message": "💁 I'm here to help you get through tricky situations when people around you don't speak any English and you just have to speak in Français!"
-        },
-    "situation_content":
-    {
-        "ask_user_situation": "Where are you right now? 📍",
-        "default_welcome": "Très bien! 👍 Here are 5 sentences that might help you in this situation:",
-        "situation_100":{
-            "title":"Aeroport, Gare",
-            "subtitle":"Le Bus Direct à l'Aéroport | Bus Shuttle at the Airport",
-            "image":"http://www.oaklandairport.com/wp-content/themes/airport/includes/timthumb.php?src=http://www.oaklandairport.com/wp-content/uploads/2016/05/box6.jpg&h=256&w=570&zc=1&q=80",
-            "button_one":"listen",
-            "button_two":"read",
-            "text_sentences":{
-                "sentence1":"Hello. One ticket please. | Bonjour. Un ticket s'il vous plaît.",
-                "sentence2":"What are the stops on this route? | Quels sont les arrêts de cette ligne ?",
-                "sentence3":"Does the bus go upto Champs Élysées? | Est-ce que le bus va jusqu'aux Champs Élysées ?",
-                "sentence4":"When is the next bus? | Le prochain bus part à quelle heure ? ",
-                "sentence5":"When is the last bus? | Le dernier bus part à quelle heure ?  "
-            },
-            "audio_sentences":{
-                 "sentence1":"https://s3.ap-south-1.amazonaws.com/fdvids/unticket.mp3"
-            }
-        },
-        "situation_101":{
-            "title":"Le Metro",
-            "subtitle":"A la station de métro  |   At the metro station",
-            "image":"https://www.railengineer.uk/wp-content/uploads/Paris-Metro-01.jpg",
-            "button_one":"listen",
-            "button_two":"read",
-             "text_sentences":{
-                "sentence1":"Hello. A Navigo pass for a week please. | Bonjour. Un pass Navigo pour une semaine s'il vous plaît. ",
-                "sentence2":"Hello. One Paris Visite pass please. | Bonjour. Un forfait Paris Visite s'il vous plaît.",
-                "sentence3":"Hello. One booklet of tickets please. | Bonjour. Un carnet de tickets s'il vous plaît.",
-                "sentence4":"There is a problem with my pass. It's not working. | Il y a un problème avec mon pass. Ça ne marche pas.",
-                "sentence5":"I would like to recharge my Pass Navigo. | Je voudrais recharger mon pass Navigo s'il vous plaît. "
-            },
-            "audio_sentenes":{
-                 "sentence1":""
-            }
-        },
-        "situation_102":{
-            "title":"Le Hotel",
-            "subtitle":"A la réception de l'hôtel |  At the hotel reception",
-            "image":"http://doubletree3.hilton.com/resources/media/dt/HUYLNDI/en_US/img/shared/full_page_image_gallery/main/HL_newfrontdesk001_2_677x380_FitToBoxSmallDimension_Center.jpg",
-            "button_one":"listen",
-            "button_two":"read",
-             "text_sentences":{
-                "sentence1":"Hello. One double room please. | Bonjour. Une chambre double s'il vous plaît. ",
-                "sentence2":"Hello. I have a reservation in the name of.... | Bonjour. J'ai une réservation au nom de....",
-                "sentence3":"Breakfast is served at what time? | Le petit déjeuner est servi à quelle heure  ? ",
-                "sentence4":"Do you have wifi? Is it free? What is the password? | Vous avez du WiFi ?    C'est gratuit ?  Quel est le mot de passe ? ",
-                "sentence5":"I would like to check-out. The bill please. | Je pars maintenant. La note s'il vous plaît."
-            },
-            "audio_sentenes":{
-                 "sentence1":""
-            }
-        }
-    }
-    
+	"welcome_content": {
+		"card_title": "Bonjour 👋 ",
+		"card_subtitle": "🥐 🇫🇷 Welcome to FranceSay 🥐 🇫🇷 ",
+		"welcome_message": "💁 I'm here to help you get through tricky situations when people around you don't speak any English and you just have to speak in Français!",
+        "exit_message":"Hope that helped!  Don't forget, you can ping me any time you are stuck. Just tell me what you want to do and I'll send you a bunch of  helpful phrases and sentences.",
+	    "goodbye_message":"A bientôt! 💁 👋 ",
+        "help_message": "Welcome to FranceSay - I'm here to help you get through tricky situations when people around you don't speak any English and you just have to speak in Français!"
+    },
+	"situation_content": {
+		"ask_user_situation": "Where are you right now? 📍",
+		"default_welcome": "Très bien! 👍 Here are some sentences that might help you in this situation:",
+		"situation_100": {
+			"title": "L'Aéroport",
+			"subtitle": "Take the Shuttle Bus at the Airport.   |  Prendre le Bus Direct à l'Aéroport ",
+			"image": "http://c8.alamy.com/comp/DGH113/france-europe-french-paris-cdg-charles-de-gaulle-airport-terminal-DGH113.jpg",
+			"button_one": "listen",
+			"button_two": "Yes",
+			"text_sentences": {
+				"sentence1": "Hello. One ticket please. | Bonjour. Un ticket s'il vous plaît.",
+				"sentence2": "What are the stops on this route? | Quels sont les arrêts de cette ligne ?",
+				"sentence3": "Does the bus go upto the Arc de Triomphe? | Est-ce que le bus va jusqu'à l'Arc de Triomphe ?",
+				"sentence4": "When is the next bus? | Le prochain bus part à quelle heure ? ",
+				"sentence5": "When is the last bus? | Le dernier bus part à quelle heure ?  "
+			},
+			"audio_sentences": {
+				"sentence1": "http://francesay.com/wp-content/uploads/2017/01/unticket.mp3",
+                "sentence2": "http://francesay.com/wp-content/uploads/2017/01/ligne.mp3",
+                "sentence3": "http://francesay.com/wp-content/uploads/2017/01/arcdetriomphe.mp3",
+                "sentence4": "http://francesay.com/wp-content/uploads/2017/01/prochainbus.mp3",
+                "sentence5": "http://francesay.com/wp-content/uploads/2017/01/dernierbus.mp3"
+			}
+		},
+		"situation_101": {
+			"title": "Le Métro",
+			"subtitle": "Buy tickets at the metro station.  |  Acheter des tickets à la station de métro.",
+			"image": "http://francesay.com/wp-content/uploads/2017/01/casal-974887_1280.jpg",
+			"button_one": "listen",
+			"button_two": "Yes",
+			"text_sentences": {
+				"sentence1": "Hello. One ticket please. | Bonjour. Un ticket s'il vous plaît. ",
+				"sentence2": "Hello. One booklet of tickets please. | Bonjour. Un carnet de tickets s'il vous plaît.",
+				"sentence3": "Hello. One Paris Visite pass please. | Bonjour. Un forfait Paris Visite s'il vous plaît.",
+				"sentence4": "Hello. A Navigo pass for a week please. | Bonjour. Un pass Navigo pour une semaine s'il vous plaît.",
+				"sentence5": "There is a problem with my pass. It's not working. | Il y a un problème avec mon pass. Ça ne marche pas.",
+				"sentence6": "There is a problem with my pass. It's not working. | Il y a un problème avec mon pass. Ça ne marche pas."
+
+			},
+			"audio_sentenes": {
+				"sentence1": "http://francesay.com/wp-content/uploads/2017/01/unticket.mp3",
+                "sentence2": "http://francesay.com/wp-content/uploads/2017/01/carnetticket.mp3",
+                "sentence3": "http://francesay.com/wp-content/uploads/2017/01/parisvisite.mp3",
+                "sentence4": "http://francesay.com/wp-content/uploads/2017/01/passnavigo.mp3",
+                "sentence5": "http://francesay.com/wp-content/uploads/2017/01/avecmonpass.mp3"
+			}
+		},
+		"situation_102": {
+			"title": "L'Hôtel",
+			"subtitle": "Check into a hotel |  Se présenter à  la réception de l'hôtel",
+			"image": "http://francesay.com/wp-content/uploads/2017/01/reception-634367_640.jpg",
+			"button_one": "listen",
+			"button_two": "Yes",
+			"text_sentences": {
+				"sentence1": "Hello. I have a reservation in the name of (Bernard Girault). | Bonjour. J'ai une réservation au nom de (Bernard Girault. ",
+				"sentence2": "Hello. One double room please. | Bonjour. Une chambre double s'il vous plaît.",
+				"sentence3": "At what time is breakfast is served? | Le petit déjeuner est servi à quelle heure  ? ",
+				"sentence4": "Do you have wifi? Is it free? What is the password? | Vous avez du WiFi ?    C'est gratuit ?  Quel est le mot de passe ? ",
+				"sentence5": "Do you have a smoking zone? | Vous avez des zones fumeurs ?"
+			},
+			"audio_sentenes": {
+				"sentence1": "http://francesay.com/wp-content/uploads/2017/01/reservationgirault.mp3",
+                "sentence2": "http://francesay.com/wp-content/uploads/2017/01/chambredouble.mp3",
+                "sentence3": "http://francesay.com/wp-content/uploads/2017/01/petitdejenuer.mp3",
+                "sentence4": "http://francesay.com/wp-content/uploads/2017/01/cafewifi.mp3",
+                "sentence5": "http://francesay.com/wp-content/uploads/2017/01/zonedefumer.mp3"
+			}
+		},
+		"situation_103": {
+			"title": "Le Café",
+			"subtitle": "Have a coffee at a neighbourhood café | Prendre un café dans le quartier",
+			"image": "http://francesay.com/wp-content/uploads/2017/01/cafe-gourmande-258201_640.jpg",
+			"button_one": "listen",
+			"button_two": "Yes",
+			"text_sentences": {
+				"sentence1": "Hello. One coffee and a chocolate croissant please.  |  Bonjour. Un café et un pain au chocolat s'il vous plaît. ",
+				"sentence2": "Hello. One hot chocolate and a croissant please.  |  Bonjour. Un chocolat chaud et un croissant s'il vous plaît. ",
+				"sentence3": "With some milk please.? | Avec du lait  s'il vous plaît.  ? ",
+				"sentence4": "Do you have a special gourmand coffee menu? | Vous avez une formule café gourmand ?",
+				"sentence5": "What time do you open? And what time do you close? | Vous ouvrez à quelle heure ?  Et vous fermez à quelle heure ? "
+
+			},
+			"audio_sentenes": {
+				"sentence1": "http://francesay.com/wp-content/uploads/2017/01/cafepainchocolat.mp3",
+                "sentence2": "http://francesay.com/wp-content/uploads/2017/01/chocolatchaud.mp3",
+                "sentence3": "http://francesay.com/wp-content/uploads/2017/01/avecdulait.mp3",
+                "sentence4": "http://francesay.com/wp-content/uploads/2017/01/formulcafe.mp3",
+                "sentence5": "http://francesay.com/wp-content/uploads/2017/01/ouvrequellehr.mp3"
+			}
+
+		},
+		"situation_104": {
+			"title": "Le Restaurant",
+			"subtitle": "Eat at a local restaurant | Manger au restaurant local",
+			"image": "http://francesay.com/wp-content/uploads/2017/01/cafe-535713_1280.jpg",
+			"button_one": "listen",
+			"button_two": "Yes",
+			"text_sentences": {
+				"sentence1": "Hello. The menu please.  |  Bonjour. Le menu s'il vous plaît.",
+				"sentence2": " would like today's special and a glass of red wine please.| Je voudrais le plat du jour et un verre de vin rouge s'il vous plaît.",
+				"sentence3": "Do you serve beer? One glass please. | Vous avez de la bière ?  Un demi s'il vous plaît.",
+				"sentence4": "Do you have any vegetarian dishes? | Vous avez des plats végétariens ? ",
+				"sentence5": "The bill please. | L'addition s'il vous plaît."
+			},
+			"audio_sentenes": {
+				"sentence1": "http://francesay.com/wp-content/uploads/2017/01/lemenu.mp3",
+                "sentence2": "http://francesay.com/wp-content/uploads/2017/01/platdujour.mp3",
+                "sentence3": "http://francesay.com/wp-content/uploads/2017/01/bierreundemi.mp3",
+                "sentence4": "http://francesay.com/wp-content/uploads/2017/01/platvegetarian.mp3",
+                "sentence5": "http://francesay.com/wp-content/uploads/2017/01/laddition.mp3"
+			}
+		}
+	}
 }

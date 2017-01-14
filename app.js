@@ -24,8 +24,8 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
   
 // Create chat bot
 var connector = new builder.ChatConnector({
-    appId: '7fcce41e-2924-4a77-83b1-37e1a76b6d4b',//process.env.MICROSOFT_APP_ID,
-    appPassword: 'oTpr9RTjTqiJdJVmd23f6yJ'//process.env.MICROSOFT_APP_PASSWORD
+    appId: '',//process.env.MICROSOFT_APP_ID,
+    appPassword: ''//process.env.MICROSOFT_APP_PASSWORD
 });
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
@@ -41,7 +41,7 @@ bot.use(builder.Middleware.dialogVersion({ version: 1.0, resetCommand: /^reset/i
 // Bots Global Actions
 //=========================================================
 
-bot.endConversationAction('goodbye', 'Goodbye :)', { matches: /^goodbye/i });
+bot.endConversationAction(CONTENT.situation_content.goodbye_message, { matches: /^goodbye/i });
 bot.beginDialogAction('help', '/help', { matches: /^help/i });
 
 //=========================================================
@@ -70,13 +70,13 @@ bot.dialog('/', [
     },
     function (session, results) {
         // Always say goodbye
-        session.send("Ok... See you later!");
+        session.send(CONTENT.situation_content.goodbye_message);
     }
 ]);
 
 bot.dialog('/menu', [
     function (session) {
-        builder.Prompts.choice(session, "What demo would you like to run?", "prompts|picture|cards|list|carousel|receipt|actions|(quit)");
+        builder.Prompts.choice(session, CONTENT.situation_content.welcome_message);
     },
     function (session, results) {
         if (results.response && results.response.entity != '(quit)') {
@@ -95,7 +95,8 @@ bot.dialog('/menu', [
 
 bot.dialog('/help', [
     function (session) {
-        session.endDialog("Global commands that are available anytime:\n\n* menu - Exits a demo and returns to the menu.\n* goodbye - End this conversation.\n* help - Displays these commands.");
+        session.send(CONTENT.situation_content.help_message);
+        session.beginDialog('/situation');
     }
 ]);
 
@@ -115,10 +116,8 @@ bot.dialog('/situation', [
                     .subtitle(CONTENT.situation_content.situation_100.subtitle)
                     .images([
                         builder.CardImage.create(session, CONTENT.situation_content.situation_100.image)
-                            .tap(builder.CardAction.showImage(session, "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Seattlenighttimequeenanne.jpg/800px-Seattlenighttimequeenanne.jpg")),
                     ])
                     .buttons([
-                        builder.CardAction.openUrl(session, "https://en.wikipedia.org/wiki/Space_Needle", CONTENT.situation_content.situation_100.button_one),
                         builder.CardAction.imBack(session, "select:100", CONTENT.situation_content.situation_100.button_two)
                     ]),
                 new builder.HeroCard(session)
@@ -126,10 +125,8 @@ bot.dialog('/situation', [
                     .subtitle(CONTENT.situation_content.situation_101.subtitle)
                     .images([
                         builder.CardImage.create(session, CONTENT.situation_content.situation_101.image)
-                            .tap(builder.CardAction.showImage(session, "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Seattlenighttimequeenanne.jpg/800px-Seattlenighttimequeenanne.jpg")),
                     ])
                     .buttons([
-                        builder.CardAction.openUrl(session, "https://en.wikipedia.org/wiki/Space_Needle", CONTENT.situation_content.situation_101.button_one),
                         builder.CardAction.imBack(session, "select:101", CONTENT.situation_content.situation_101.button_two)
                     ]),
                 new builder.HeroCard(session)
@@ -137,12 +134,29 @@ bot.dialog('/situation', [
                     .subtitle(CONTENT.situation_content.situation_102.subtitle)
                     .images([
                         builder.CardImage.create(session, CONTENT.situation_content.situation_102.image)
-                            .tap(builder.CardAction.showImage(session, "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Seattlenighttimequeenanne.jpg/800px-Seattlenighttimequeenanne.jpg")),
                     ])
                     .buttons([
-                        builder.CardAction.openUrl(session, "https://en.wikipedia.org/wiki/Space_Needle", CONTENT.situation_content.situation_102.button_one),
                         builder.CardAction.imBack(session, "select:102", CONTENT.situation_content.situation_102.button_two)
+                    ]),
+                new builder.HeroCard(session)
+                    .title(CONTENT.situation_content.situation_103.title)
+                    .subtitle(CONTENT.situation_content.situation_103.subtitle)
+                    .images([
+                        builder.CardImage.create(session, CONTENT.situation_content.situation_103.image)
                     ])
+                    .buttons([
+                        builder.CardAction.imBack(session, "select:103", CONTENT.situation_content.situation_103.button_two)
+                    ]),
+                new builder.HeroCard(session)
+                    .title(CONTENT.situation_content.situation_104.title)
+                    .subtitle(CONTENT.situation_content.situation_104.subtitle)
+                    .images([
+                        builder.CardImage.create(session, CONTENT.situation_content.situation_104.image)
+                    ])
+                    .buttons([
+                        builder.CardAction.imBack(session, "select:104", CONTENT.situation_content.situation_104.button_two)
+                    ])
+                    
             ]);
         builder.Prompts.choice(session, msg, "select:100|select:101|select:102");
     },
