@@ -46,7 +46,7 @@
 				"sentence6": "There is a problem with my pass. It's not working. | Il y a un problème avec mon pass. Ça ne marche pas."
 
 			},
-			"audio_sentenes": {
+			"audio_sentences": {
 				"sentence1": "http://francesay.com/wp-content/uploads/2017/01/unticket.mp3",
                 "sentence2": "http://francesay.com/wp-content/uploads/2017/01/carnetticket.mp3",
                 "sentence3": "http://francesay.com/wp-content/uploads/2017/01/parisvisite.mp3",
@@ -67,7 +67,7 @@
 				"sentence4": "Do you have wifi? Is it free? What is the password? | Vous avez du WiFi ?    C'est gratuit ?  Quel est le mot de passe ? ",
 				"sentence5": "Do you have a smoking zone? | Vous avez des zones fumeurs ?"
 			},
-			"audio_sentenes": {
+			"audio_sentences": {
 				"sentence1": "http://francesay.com/wp-content/uploads/2017/01/reservationgirault.mp3",
                 "sentence2": "http://francesay.com/wp-content/uploads/2017/01/chambredouble.mp3",
                 "sentence3": "http://francesay.com/wp-content/uploads/2017/01/petitdejenuer.mp3",
@@ -89,7 +89,7 @@
 				"sentence5": "What time do you open? And what time do you close? | Vous ouvrez à quelle heure ?  Et vous fermez à quelle heure ? "
 
 			},
-			"audio_sentenes": {
+			"audio_sentences": {
 				"sentence1": "http://francesay.com/wp-content/uploads/2017/01/cafepainchocolat.mp3",
                 "sentence2": "http://francesay.com/wp-content/uploads/2017/01/chocolatchaud.mp3",
                 "sentence3": "http://francesay.com/wp-content/uploads/2017/01/avecdulait.mp3",
@@ -111,7 +111,7 @@
 				"sentence4": "Do you have any vegetarian dishes? | Vous avez des plats végétariens ? ",
 				"sentence5": "The bill please. | L'addition s'il vous plaît."
 			},
-			"audio_sentenes": {
+			"audio_sentences": {
 				"sentence1": "http://francesay.com/wp-content/uploads/2017/01/lemenu.mp3",
                 "sentence2": "http://francesay.com/wp-content/uploads/2017/01/platdujour.mp3",
                 "sentence3": "http://francesay.com/wp-content/uploads/2017/01/bierreundemi.mp3",

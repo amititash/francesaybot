@@ -199,7 +199,7 @@ bot.dialog('/chosenSituation',[
 
        if(session.dialogData.index > 5 )
        {
-           session.endDialog("Thats it. No more bananas!");
+           session.endDialog(CONTENT.welcome_content.exit_message);
        }
      
            
